@@ -9,22 +9,46 @@
         <!--#include virtual="../Common/document-header.html"-->
         <main>
             <div class="contactformcontainer">
-                <form class="contactform">
+                <form id="contactform" action="javascript:submitForm()">
                     <div class="formitem">
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name">
                     </div>
                     <div class="formitem">
                         <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email"><br>
+                        <input type="email" id="email" name="email"><br>
                     </div>
                     <div class="formitem">
                         <label for="phone">Phone:</label><br>
                         <input type="text" id="phone" name="phone"><br>
                     </div>
+                    <div class="formitem">
+                        <textarea name="message" rows="10" cols="20">Type comments here.</textarea>
+                    </div>
+                    <div>
+                        <p>Please rate the quality of my website</p>
+                        <input type="radio" id="1" name="rating" value="1">
+                        <label for="1">1 Star</label><br>
+                        <input type="radio" id="2" name="rating" value="2">
+                        <label for="2">2 Stars</label><br>
+                        <input type="radio" id="3" name="rating" value="3">
+                        <label for="3">3 Stars</label><br>
+                        <input type="radio" id="4" name="rating" value="4">
+                        <label for="4">4 Stars</label><br>
+                        <input type="radio" id="5" name="rating" value="5">
+                        <label for="5">5 Stars</label><br>
+                    </div>
+                    <br>
                     <input type="submit" value="Submit">
-                  </form>
+                </form>
             </div>
         </main>
     </body>
 </html>
+<script>
+    function submitForm() {
+        console.log("Called submitForm");
+        console.log(document.getElementById("name").value);
+        alert("Your name is " + document.getElementById("name").value.length + " letters long");
+    }   
+</script>
