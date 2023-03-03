@@ -1,0 +1,84 @@
+body {
+    background-color: white;
+    margin:0;
+}
+header {background-color: white;}
+h1 {
+    color: #4a71c7;
+    font-size: 3em;
+}
+h2 {
+    margin:0px;
+    color: #4a71c7;
+}
+li a {
+    display: block;
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #4a71c7;
+}
+li a:hover {
+    background-color: #4a71c7;
+    color: white;
+}
+p {
+    margin: 0
+}
+
+.header-div{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navigation-bar{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 20px;
+}
+
+.navigation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list-item{
+    float: left;
+}
+
+.footer-div{
+    text-align: center;
+    padding: 10px
+}
+
+.school{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+.school ul{
+    text-align: left;
+    padding: 5px;
+    padding-left: 100px;
+    margin: 20px;
+}
+
+#education{
+    margin: 0px;
+    padding: 8px;
+}
+
+#education h2{
+    padding-left: 40px;
+}
+
+#schools{
+    display: flex;
+}

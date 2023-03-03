@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    margin:0;
+}
+header {background-color: white;}
+h1 {
+    color: #4a71c7;
+    font-size: 3em;
+}
+li a {
+    display: block;
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #4a71c7;
+}
+li a:hover {
+    background-color: #4a71c7;
+    color: white;
+}
+
+.header-div{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.navigation-bar{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin:0;
+    padding: 20px;
+}
+
+.navigation-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list-item{
+    float: left;
+}
+
