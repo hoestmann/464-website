@@ -1,12 +1,27 @@
+.light-theme {
+    --text-color: black;
+    --background-color: white;
+    --accent-color: #4a71c7;
+}
+
+.dark-theme {
+    --text-color: white;
+    --background-color: black;
+    --accent-color: #4a71c7;
+}
+
 body {
     background-color: white;
     margin:0;
 }
+
 header {background-color: white;}
+
 h1 {
     color: #4a71c7;
     font-size: 3em;
 }
+
 li a {
     display: block;
     width: 120px;
@@ -16,7 +31,24 @@ li a {
     background-color: white;
     color: #4a71c7;
 }
+
 li a:hover {
+    background-color: #4a71c7;
+    color: white;
+}
+
+li button {
+    display: block;
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: #4a71c7;
+    border: none;
+}
+
+li button:hover {
     background-color: #4a71c7;
     color: white;
 }
@@ -43,5 +75,31 @@ li a:hover {
 
 .navigation-list-item{
     float: left;
+}
+
+.dropdown{
+    overflow: hidden
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #4a71c7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
 }
 

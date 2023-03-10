@@ -1,29 +1,67 @@
+.light-theme {
+    --text-color: black;
+    --background-color: white;
+    --accent-color: #4a71c7;
+}
+
+.dark-theme {
+    --text-color: white;
+    --background-color: black;
+    --accent-color: #4a71c7;
+}
+
 body {
-    background-color: white;
+    background-color: var(--background-color);
     margin:0;
 }
-header {background-color: white;}
+
+header {background-color: var(--background-color);}
+
+main {color: var(--text-color);}
+
+footer {color: var(--text-color);}
+
 h1 {
-    color: #4a71c7;
+    color: var(--accent-color);
     font-size: 3em;
 }
+
 h2 {
     margin:0px;
-    color: #4a71c7;
+    color: var(--accent-color);
 }
+
 li a {
     display: block;
     width: 120px;
     padding: 8px;
     text-align: center;
     text-decoration: none;
-    background-color: white;
-    color: #4a71c7;
+    background-color: var(--background-color);
+    color: var(--accent-color);
 }
+
 li a:hover {
-    background-color: #4a71c7;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--background-color);
 }
+
+li button {
+    display: block;
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--background-color);
+    color: var(--accent-color);
+    border: none;
+}
+
+li button:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
 p {
     margin: 0
 }
@@ -31,11 +69,11 @@ p {
 .header-div{
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--background-color);
 }
 
 .navigation-bar{
-    background-color: white;
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     margin:0;
@@ -68,6 +106,32 @@ p {
     padding: 5px;
     padding-left: 100px;
     margin: 20px;
+}
+
+.dropdown{
+    overflow: hidden
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--accent-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
 }
 
 #education{

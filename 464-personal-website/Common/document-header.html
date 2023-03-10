@@ -1,4 +1,5 @@
 <header>
+    <script src="../JavaScript/darkmode.js"></script>
     <div class="header-div">
         <h1>Hunter Oestmann</h1>
     </div>
@@ -8,7 +9,15 @@
         <li class="navigation-list-item"><a href="../index.html">Home</a></li>
         <li class="navigation-list-item"><a href="school.html">School</a></li>
         <li class="navigation-list-item"><a href="internship.html">Internship</a></li>
-        <li class="navigation-list-item"><a href="about.html">About Me</a></li>
+        <li class="navigation-list-item dropdown">
+            <a href="about.html">About Me</a>
+            <div class="dropdown-content">
+                <a href="home.html">Where I'm From</a>
+                <a href="pets.html">My Pets</a>
+                <a href="values.html">My Values</a>
+            </div>
+        </li>
         <li class="navigation-list-item"><a href="contact.html">Contact Me</a></li>
+        <li class="navigation-list-item"><button type="button" onclick="toggleDarkMode()">Dark Mode</button></li>
     </ul>
 </nav>
