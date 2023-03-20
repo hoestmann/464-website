@@ -6,6 +6,6 @@ My course project will be a personal page.
  - A page about my life and interests
  - A page where people can contact me
 
- Each pages uses flexboxs for layout along with header, body, sections, and footer
+ Each pages uses flexboxs for layout along with header, body, sections, and footer. The website has a light and dark theme
 
  Users will be able to interact with a contact me form on the contact page
