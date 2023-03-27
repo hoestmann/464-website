@@ -3,18 +3,41 @@ img{
     height: auto;
 }
 
-#UPLogo img{
-    max-width: 10%;
+p{
+    font-size: 1.2em;
+}
+
+h3{
+    color: orange;
+}
+
+#UPLogo{
+    max-width: 40%;
+}
+
+#LMS{
+    /* max-width: 40%; */
+    object-fit: fill;
+}
+
+#MSeat{
+    max-width: 50%;
 }
 
 .project{
     display: flex;
 }
 
+.project-description{
+    padding: 10px;
+}
+
 #intro{
     display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
+}
+
+#intro p{
+    font-size: 1.7em;
 }
 
 #UP{
