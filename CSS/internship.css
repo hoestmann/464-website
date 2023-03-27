@@ -1,4 +1,27 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#UPLogo img{
+    max-width: 10%;
+}
+
+.project{
+    display: flex;
+}
+
+#intro{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 #UP{
     margin: 0px;
     padding: 16px;
+}
+
+#UP h1{
+    color: orange;
 }

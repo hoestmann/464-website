@@ -108,8 +108,39 @@ p {
     margin: 20px;
 }
 
+.school h4 {
+    text-align: left;
+    padding: 5px;
+    padding-left: 60px;
+    margin: 20px;
+}
+
+.job{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+.job ul{
+    text-align: left;
+    padding: 5px;
+    padding-left: 100px;
+    margin: 20px;
+}
+
+.job h4 {
+    text-align: left;
+    padding: 5px;
+    padding-left: 60px;
+    margin: 20px;
+}
+
+.job p {
+    text-align: left;
+}
+
 .dropdown{
-    overflow: hidden
+    overflow: hidden;
 }
 
 .dropdown-content {
@@ -140,9 +171,22 @@ display: block;
 }
 
 #education h2{
-    padding-left: 40px;
+    padding-left: 80px;
 }
 
 #schools{
+    display: flex;
+}
+
+#work-experience{
+    margin: 0px;
+    padding: 8px;
+}
+
+#work-experience h2{
+    padding-left: 80px;
+}
+
+#jobs{
     display: flex;
 }
