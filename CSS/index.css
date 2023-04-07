@@ -191,9 +191,13 @@ display: block;
     display: flex;
 }
 
+#resume{
+    align-content: center;
+}
+
 #resumepdf{
     height: 1150px;
-    width: 100%;
+    width: 50%;
     border: none;
     overflow: hidden;
 }
