@@ -192,7 +192,8 @@ display: block;
 }
 
 #resume{
-    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #resumepdf{
