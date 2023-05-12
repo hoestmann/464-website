@@ -1,9 +1,31 @@
+#main {
+    padding: 40px;
+    display: flex;
+}
+#container {
+    min-width: 50%;
+}
+
 #UNL{
     margin: 0px;
-    padding: 16px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#UNL h1{
+    color: red;
+    margin: 0px;
 }
 
 #SoftwareEngineering{
     margin: 0px;
-    padding: 16px;
+    padding-right: 20px;
+}
+
+#SoftwareEngineering h2{
+    color: red;
+}
+
+#school{
+    max-width: 80%;
 }

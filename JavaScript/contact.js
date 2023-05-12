@@ -6,7 +6,9 @@ function sendForm() {
     emailjs.sendForm('contact_service', 'contact_form', form, 'OuGOJqkZSLvQiUFQd')
                     .then(function() {
                         console.log('SUCCESS!');
+                        alert("Email sent");
                     }, function(error) {
                         console.log('FAILED...', error);
+                        alert("Failed to send email");
                     });
 }
